@@ -25,7 +25,11 @@
   <script type="module">
     
   </script> -->
-  <script src="dist/test.js"></script>
+  <script src="node_modules/systemjs/dist/system.js"></script>
+  <script>
+    System.import('/dist/test.js');
+
+  </script>
 </body>
 
 </html>
