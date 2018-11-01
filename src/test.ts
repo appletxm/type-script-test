@@ -1,6 +1,16 @@
 let my = true
+let myName = "123456"
 
 function hello(compiler: string) {
-    console.log("Hello from " + compiler);
+    console.log("Hello from ...." + compiler);
 }
-hello("TypeScript");
+
+class Person {
+    construct() {
+    }
+    showName() {
+        console.info(`.........`)
+    }
+}
+
+hello("TypeScript")

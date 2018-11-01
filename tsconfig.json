@@ -11,7 +11,11 @@
     "src/test.ts"
   ],
   "include": [
-    "**/*"
+    "src/**/*"
   ],
-  "exclude": []
+  "exclude": [
+    "node_modules/**/*",
+    "mocks/**/*",
+    "scripts/**/*"
+  ]
 }
