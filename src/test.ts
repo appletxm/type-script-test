@@ -1,5 +1,5 @@
-import name from './m-a'
-import age from './m-b'
+import name from './m-a.js'
+import age from './m-b.js'
 
 let my = true
 let myName = "123456"
