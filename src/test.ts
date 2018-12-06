@@ -10,6 +10,15 @@ function hello(compiler: string) {
     console.log("Hello from ...." + compiler, decLiteral, list, name, age);
 }
 
+interface Person {
+    firstName: string;
+    lastName: string;
+}
+function greeter(person: Person) {
+    return "Hello, " + person.firstName + " " + person.lastName;
+}
+let user = { firstName: "Jane", lastName: "User" };
+console.info(greeter(user));
 class Person {
     construct() {
     }
