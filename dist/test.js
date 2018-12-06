@@ -1,6 +1,6 @@
 System.register(["./m-a.js", "./m-b.js"], function (exports_1, context_1) {
     "use strict";
-    var m_a_js_1, m_b_js_1, my, myName, decLiteral, list, user, Person;
+    var m_a_js_1, m_b_js_1, my, myName, decLiteral, list, user;
     var __moduleName = context_1 && context_1.id;
     function hello(compiler) {
         console.log("Hello from ...." + compiler, decLiteral, list, m_a_js_1["default"], m_b_js_1["default"]);
@@ -24,16 +24,6 @@ System.register(["./m-a.js", "./m-b.js"], function (exports_1, context_1) {
             list = [1, 2, 3];
             user = { firstName: "Jane", lastName: "User" };
             console.info(greeter(user));
-            Person = (function () {
-                function Person() {
-                }
-                Person.prototype.construct = function () {
-                };
-                Person.prototype.showName = function () {
-                    console.info(".........");
-                };
-                return Person;
-            }());
             hello("TypeScript");
         }
     };

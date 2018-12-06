@@ -19,12 +19,13 @@ function greeter(person: Person) {
 }
 let user = { firstName: "Jane", lastName: "User" };
 console.info(greeter(user));
-class Person {
-    construct() {
-    }
-    showName() {
-        console.info(`.........`)
-    }
-}
+
+// class Person {
+//     construct() {
+//     }
+//     showName() {
+//         console.info(`.........`)
+//     }
+// }
 
 hello("TypeScript")
