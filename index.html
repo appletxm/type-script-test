@@ -13,20 +13,54 @@
     body {
       font-size: .12rem;
     }
+    .box{
+      /* position: static;
+      top: 0;
+      left: 0;
+      width: 100%; */
+      height: 5rem;
+      background-color: gray;
+    }
+    .inner {
+      /* position: static;
+      top: 50%;
+      left: 50%;
+      width: 4rem;
+      height: 2rem;
+      margin:  -1rem -2rem; */
+      height: 2rem;
+      background-color: red;
+    }
   </style>
 </head>
 
 <body>
   <h1>test type script</h1>
-  <!-- <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
-  <script src="https://google.github.io/traceur-compiler/bin/BrowserSystem.js"></script>
-  <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
-  <script type="module">
-    
-  </script> -->
+  <!-- <div class="box">
+    <input type="text" value="" />
+  </div>
+
+  <div class="inner">
+    <input type="text" value="" id="js-test-input" />
+  </div> -->
+
   <script src="node_modules/systemjs/dist/system.js"></script>
   <script>
     System.import('/dist/test.js');
+
+    // let scrollTop = 0
+    // document.querySelector('#js-test-input').addEventListener('focus', () => {
+    //   scrollTop = document.body.scrollTop
+    //   // setTimeout(() => {
+    //   //   alert(scrollTop)
+    //   // }, 2000)
+    // })
+    // document.querySelector('#js-test-input').addEventListener('blur', () => {
+    //   setTimeout(() => {
+    //     document.body.scrollTop = scrollTop
+    //     // document.focus()
+    //   }, 1000) 
+    // })
   </script>
 </body>
 

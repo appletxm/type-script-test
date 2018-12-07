@@ -5,7 +5,7 @@ let app = express()
 let serverRouter = require('./server-router')
 
 const port = 9000
-const host = '127.0.0.1'
+const host = '10.70.30.167'
 
 app.use('*', serverRouter)
 
