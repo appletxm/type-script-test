@@ -5,6 +5,10 @@ let my = true
 let myName = "123456"
 let decLiteral: number = 6
 let list: Array<number> = [1, 2, 3]
+let stringList: string[] = ['1111', '333', '222']
+let x: [string, number] = ['111', 10]
+
+console.info(stringList)
 
 function hello(compiler: string) {
     console.log("Hello from ...." + compiler, decLiteral, list, name, age);
@@ -29,3 +33,12 @@ console.info(greeter(user));
 // }
 
 hello("TypeScript")
+
+enum Color {Red = 1, Green = 2, Blue = 3}
+let c:Color = Color.Blue
+console.info(c)
+
+let notSure: any = 4
+notSure = `1234567 string`
+notSure = 123
+
