@@ -36,3 +36,13 @@ let aro: ReadonlyArray<object> = [{a:1, b:2}, {c:3, d:4}]
 let point: Point = {x: 1, y: 1}
 console.info('interface:', obj)
 console.info(aro[0])
+
+interface SearchFunc {
+  (source: string, subString: string): boolean;
+}
+let searchFunc: SearchFunc = function(src: string, sub: string): boolean {
+  let result = src.search(sub)
+  return result > -1
+
+}
+console.info('searchFunc:', searchFunc('12345', '45'))
