@@ -23,4 +23,10 @@ var searchFunc = function (src, sub) {
     return result > -1;
 };
 console.info('searchFunc:', searchFunc('12345', '45'));
+function voidFn(config) {
+    console.info('--------', config);
+}
+voidFn({});
+var stringArray = ['a', 'b'];
+console.info('=========', stringArray[0], stringArray[1]);
 //# sourceMappingURL=interface.js.map

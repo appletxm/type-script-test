@@ -4,7 +4,8 @@ interface LabelledValue {
 
 interface SquareConfig {
   color?: string,
-  width?: number
+  width?: number,
+  [propName: string]: any
 }
 
 interface Point {
@@ -46,3 +47,14 @@ let searchFunc: SearchFunc = function(src: string, sub: string): boolean {
 
 }
 console.info('searchFunc:', searchFunc('12345', '45'))
+
+function voidFn(config: SquareConfig) : void {
+  console.info('--------', config)
+}
+voidFn({})
+interface ReadonlyStringArray {
+  readonly [index: number]: string;
+}
+let stringArray: ReadonlyStringArray = ['a', 'b']
+console.info('=========', stringArray[0], stringArray[1])
+
